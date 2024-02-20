@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <h1>MedicApp</h1>
+    </div>
+    <div class="header-container">
+        <form class="search-form" action="/">
+            <input type="text" name="query" placeholder="Buscar el medicamento por nombre" id="search">
+            <button class="searchBtn" type="submit">search</button>
+        </form>
+    </div>
+   </header>
+   <div class="container">
+    <aside>
+        <div class="filters">
+            <div class="filterBy">
+                <h3>Filter By</h3>
+                <div class="tags">
+                    <button class="filter-button" data-filter="nombre">Nombre</button>
+                    <button class="filter-button" data-filter="codigo">Codigo</button>
+                    <button class="filter-button" data-filter="altoRiesgo">Alto riesgo</button>
+                    <button class="filter-button" data-filter="estupefaciente">Estupefaciente</button>
+                    <button class="filter-button" data-filter="termolabil">Termolabil</button>
+                    <button class="filter-button" data-filter="mezclas">Mezclas</button>
+                </div>
+            </div>
+            <div class="addNew">
+                <h3>Add new item</h3>
+                <div class="nameInput">
+                    <label for="itemName">Nombre:</label>
+                    <input type="text" name="name" id="itemName">
+                </div>
+                <div class="codeInput">
+                    <label for="itemCode">Código:</label>
+                    <input type="text" name="code" id="itemCode">
+                </div>
+            </div>
+            <div class="characteristics">
+                <label for="altoRiesgo">Alto riesgo</label>
+                <input type="checkbox">
+                <label for="estupefaciente">Estupefaciente</label>
+                <input type="checkbox">
+                <label for="termolabil">termolabil</label>
+                <input type="checkbox">
+                <label for="mezclas">mezclas</label>
+                <input type="checkbox">
+            </div>
+                <button class="btn apply">Crear</button>
+            </form>
+        </div>
+    </aside>
+    <div class="list">
+        <div class="list-container">
+            <div id="results"></div>
+        </div>
+    </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
