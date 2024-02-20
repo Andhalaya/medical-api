@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 async function fetchAndDisplayItems() {
     try {
         // Fetch items from the server
-        const response = await fetch('http://localhost:8080/items');
+        const response = await fetch('https://medical-api-dev-mqpb.2.ie-1.fl0.io/items');
         const items = await response.json();
         console.log(items)
         // Display items in the HTML
