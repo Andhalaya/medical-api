@@ -115,6 +115,8 @@ function displayItems(items) {
   
           dropdownBtn.addEventListener('click', function() {
               dropdownContent.classList.toggle('show');
+              const arrowIcon = dropdownBtn.querySelector('.bx');
+              arrowIcon.classList.toggle('bx-rotate-90');
           }); 
     });
 }
