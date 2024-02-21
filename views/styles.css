@@ -9,7 +9,7 @@
 
 header{
     background-color: #578897;
-    padding: 30px;
+    padding: 20px 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -26,32 +26,49 @@ h1{
     color: white;
 }
 
+.login{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px 15px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .search-form{
     display: flex;
+    flex-direction: column;
     gap: 15px;
     justify-content: space-between;
+    margin: 30px 0px;
 }
 
 .search-form input{
     width: 400px;
+    background-color: #ffffff;
+    border: none;
 }
 
 .searchBtn{
     width: 80px;
     padding: 10px;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #205c84;
     border-radius: 10px;
-    color: aliceblue;
+    color: #205c84;
     cursor: pointer;
 }
 
 .searchBtn:hover {
     background-color: #043f50;
     border: none;
+    color: #ffffff;
 }
 #search{
     padding: 10px;
+    background-color: #ffffff;
 }
 
 .container{
@@ -138,4 +155,56 @@ aside{
 #itemTags{
     display: flex;
     gap: 20px;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .search-form {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .search-form input {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 30px; /* Adjust as needed */
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto; /* Remove fixed height */
+    }
+
+    aside {
+        padding: 20px;
+    }
+
+    .list {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .list-container {
+        height: auto; /* Remove fixed height */
+        max-height: 550px; 
+        width: 80%;
+        padding: 10px;
+    }
+
+    .item{
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    #itemTags{
+        align-items: center;
+    }
 }

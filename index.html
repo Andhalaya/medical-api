@@ -9,18 +9,22 @@
 <body>
    <header>
     <div class="logo">
-        <img src="views/assets/kisspng-medicine-health-care-computer-icons-5b324b31bc2f83.2959389715300227057708.png" alt="medic" width="50px">
+        <img src="views/assets/kisspng-medicine-health-care-computer-icons-5b324b31bc2f83.2959389715300227057708.png" alt="medic" width="40px">
         <h1>MedicApp</h1>
     </div>
-    <div class="header-container">
-        <form class="search-form" action="/">
-            <input type="text" name="query" placeholder="Buscar el medicamento por nombre" id="search">
-            <button class="searchBtn" type="submit">search</button>
-        </form>
+    <div>
+        <button class="login">Login</button>
     </div>
    </header>
    <div class="container">
     <aside>
+        <div class="search-container">
+            <h3>Search</h3>
+            <form class="search-form" action="/">
+                <input type="text" name="query" placeholder="Buscar el medicamento por nombre" id="search">
+                <button class="searchBtn" type="submit">search</button>
+            </form>
+        </div>
         <div class="filters">
             <div class="filterBy">
                 <h3>Filter By</h3>
@@ -32,7 +36,7 @@
                     <button class="filter-button" data-filter="mezclas">Mezclas</button>
                 </div>
             </div>
-            <div class="addNew">
+            <!-- <div class="addNew">
                 <h3>Add new item</h3>
                 <div class="nameInput">
                     <label for="itemName">Nombre:</label>
@@ -55,7 +59,7 @@
             </div>
                 <button class="btn apply">Crear</button>
             </form>
-        </div>
+        </div> -->
     </aside>
     <div class="list">
         <div class="list-container">
