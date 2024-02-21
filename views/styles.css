@@ -92,7 +92,7 @@ h3{
 
 /* Aside */
 
-aside{
+.aside{
     background-color: #ffffff;
     padding: 30px;
     box-shadow: 2px 3px 10px rgb(102, 102, 102);
@@ -221,7 +221,73 @@ footer{
 .type-container p{
     font-size: 25px;
 }
-/* Media query for screens smaller than 600px */
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 15px;
+        
+    }
+
+    body{
+        font-size: 15px;
+        width: auto;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .tags .filter-button{
+        font-size: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+
+    .aside {
+        height: auto;
+        margin-bottom: 20px;
+        max-width: 300px;
+    }
+
+        
+    .list-container {
+        max-width: 320px;
+        padding: 20px;
+      
+    }
+
+    .info {
+       display: flex;
+       align-items: center;
+       gap: 20px; 
+    }
+
+    .tags button {
+        padding: 3px 8px;
+        font-size: 12px;
+    }
+
+    .filter-button.active {
+        font-size: 12px;
+    }
+
+    .item button {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+}
+
+
+
+/* Media query for screens smaller than 600px 
 @media (max-width: 600px) {
     header {
         flex-direction: row;
@@ -238,12 +304,12 @@ footer{
     }
 
     .logo img {
-        width: 30px; /* Adjust as needed */
+        width: 30px; 
     }
 
     .container {
         flex-direction: column;
-        height: auto; /* Remove fixed height */
+        height: auto; 
     }
 
     aside {
@@ -256,7 +322,7 @@ footer{
     }
 
     .list-container {
-        height: auto; /* Remove fixed height */
+        height: auto;
         max-height: 550px; 
         padding: 10px;
     }
@@ -274,4 +340,4 @@ footer{
     #itemTags{
         align-items: center;
     }
-}
+} */
