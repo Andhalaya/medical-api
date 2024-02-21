@@ -231,6 +231,7 @@ footer{
     body{
         font-size: 15px;
         width: auto;
+        background-color: white;
     }
 
     .logo h1 {
@@ -239,6 +240,7 @@ footer{
 
     .search-form {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .tags .filter-button{
@@ -249,17 +251,21 @@ footer{
         flex-direction: column;
         height: auto;
         padding: 0;
+        margin: 0;
     }
 
     .aside {
+        display: flex;
+        flex-wrap: wrap;
         height: auto;
         margin-bottom: 20px;
         max-width: 300px;
+        box-shadow: none;
     }
 
         
     .list-container {
-        max-width: 320px;
+        width: auto;
         padding: 20px;
       
     }
