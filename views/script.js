@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function fetchItems(searchTerm) {
-    fetch(`http://localhost:8080/search?search=${searchTerm}`)
+    fetch(`https://medical-api-dev-mqpb.2.ie-1.fl0.io/search?search=${searchTerm}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -51,7 +51,7 @@ function fetchItems(searchTerm) {
 async function fetchItemsWithFilter(filterBy) {
     try {
         // Fetch items with filter from the server
-        const response = await fetch(`http://localhost:8080/filterBy?filter=${filterBy}`);
+        const response = await fetch(`https://medical-api-dev-mqpb.2.ie-1.fl0.io/filterBy?filter=${filterBy}`);
         const items = await response.json();
         console.log(items);
         // Display filtered items in the HTML
@@ -65,7 +65,7 @@ async function fetchItemsWithFilter(filterBy) {
 async function fetchAndDisplayItems() {
     try {
         // Fetch items from the server
-        const response = await fetch('http://localhost:8080/items');
+        const response = await fetch('https://medical-api-dev-mqpb.2.ie-1.fl0.io/items');
         const items = await response.json();
         console.log(items)
         // Display items in the HTML
