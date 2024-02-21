@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medicine Search</title>
+    <title>WikiFarma</title>
     <link rel="stylesheet" href="views/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
    <header>
     <div class="logo">
-        <img src="views/assets/kisspng-medicine-health-care-computer-icons-5b324b31bc2f83.2959389715300227057708.png" alt="medic" width="40px">
-        <h1>MedicApp</h1>
+        <i class='bx bxs-capsule'></i>
+        <h1>WikiFarma</h1>
     </div>
     <div>
         <button class="login">Login</button>
@@ -19,15 +20,15 @@
    <div class="container">
     <aside>
         <div class="search-container">
-            <h3>Search</h3>
+            <h3>Buscador</h3>
             <form class="search-form" action="/">
                 <input type="text" name="query" placeholder="Buscar el medicamento por nombre" id="search">
-                <button class="searchBtn" type="submit">search</button>
+                <button class="searchBtn" type="submit">buscar</button>
             </form>
         </div>
         <div class="filters">
             <div class="filterBy">
-                <h3>Filter By</h3>
+                <h3>Filtrado</h3>
                 <div class="tags">
                     <button class="filter-button" onclick= "fetchAndDisplayItems()">Nombre</button>
                     <button class="filter-button" data-filter="alto riesgo">Alto riesgo</button>
@@ -36,6 +37,7 @@
                     <button class="filter-button" data-filter="mezclas">Mezclas</button>
                 </div>
             </div>
+        </div>
             <!-- <div class="addNew">
                 <h3>Add new item</h3>
                 <div class="nameInput">
@@ -60,6 +62,35 @@
                 <button class="btn apply">Crear</button>
             </form>
         </div> -->
+        <div class="leyend-container">
+            <h3>Leyenda</h3>
+            <div class="types">
+                <div class="type-container">
+                    <p>🟣</p>
+                    Estupefaciente
+                </div>
+                <div class="type-container">
+                    <p >🟢</p>
+                    Termolabil
+                </div>
+                <div class="type-container">
+                    <p>🔵</p>
+                    Mezcla
+                </div>
+                <div class="type-container">
+                    <p>🟠</p>
+                    Alto riesgo
+                </div>
+                <div class="type-container">
+                    <p>🔴</p>
+                    Peligroso
+                </div>
+                <div class="type-container">
+                    <p>🟡</p>
+                    Frágil
+                </div>
+            </div>
+        </div>
     </aside>
     <div class="list">
         <div class="list-container">
@@ -69,4 +100,7 @@
    </div>
    <script src="views/script.js"></script>
 </body>
+<footer>
+    <img src="views/assets/logo-hospital-fuenlabrada.png" alt="" width="200px">
+</footer>
 </html>

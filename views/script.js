@@ -86,16 +86,36 @@ function displayItems(items) {
         itemDiv.classList.add('item');
 
         itemDiv.innerHTML = `
-            <div id="itemName">${item.nombre}</div>
-            <div id="itemTags">
+            <div class="info">
+                <div id="itemName">
+                ${item.nombre}
                 ${item.estupefacientes ? '<span class="itemTag">Estupefacientes</span>' : ''}
-                ${item.termolabil ? '<span class="itemTag">Termolabil</span>' : ''}
-                ${item['alto riesgo'] ? '<span class="itemTag">Alto Riesgo</span>' : ''}
-                ${item.mezclas ? '<span class="itemTag">Mezclas</span>' : ''}
+                ${item.termolabil ? '<span class="itemTag">🟢</span>' : ''}
+                ${item['alto riesgo'] ? '<span class="itemTag">🟠</span>' : ''}
+                ${item.mezclas ? '<span class="itemTag">🔵</span>' : ''}
+                </div>
+                
+                <button class="dropbtn">
+                    <i class='bx bxs-down-arrow bx-rotate-90' ></i>
+                </button>
             </div>
+            <div class="dropdown-content">
+                <p>Codigo: ${item.codigo}</p>
+                ${item.estupefacientes ? '<span class="itemTag">Tipo: Estupefaciente</span>' : ''}
+                ${item.termolabil ? '<span class="itemTag">Tipo: Termolabil</span>' : ''}
+                ${item['alto riesgo'] ? '<span class="itemTag">Tipo: Alto Riesgo</span>' : ''}
+                ${item.mezclas ? '<span class="itemTag">Tipo:Mezcla</span>' : ''} 
+                <p>Ubicación:</p>
+            </div>  
         `;
 
         resultsDiv.appendChild(itemDiv);
+          const dropdownBtn = itemDiv.querySelector('.dropbtn');
+          const dropdownContent = itemDiv.querySelector('.dropdown-content');
+  
+          dropdownBtn.addEventListener('click', function() {
+              dropdownContent.classList.toggle('show');
+          }); 
     });
 }
 
