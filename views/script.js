@@ -88,7 +88,12 @@ function displayItems(items) {
         itemDiv.innerHTML = `
             <div id="itemName">${item.nombre}</div>
             <div id="itemCode">Codigo: ${item.codigo}</div>
-            <div id="tags"></div>
+            <div id="itemTags">
+                ${item.estupefacientes ? '<span class="itemTag">Estupefacientes</span>' : ''}
+                ${item.termolabil ? '<span class="itemTag">Termolabil</span>' : ''}
+                ${item['alto riesgo'] ? '<span class="itemTag">Alto Riesgo</span>' : ''}
+                ${item.mezclas ? '<span class="itemTag">Mezclas</span>' : ''}
+            </div>
             <button>Edit</button>
         `;
 

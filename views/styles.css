@@ -124,7 +124,7 @@ aside{
     color: white; 
 }
 
-.item button{
+.item button, .itemTag{
     background-color: #578897; 
     color: white; 
     box-shadow: 2px 2px 5px rgb(102, 102, 102);
@@ -133,4 +133,9 @@ aside{
     padding: 5px 15px;
     cursor: pointer;
     font-size: 15px;
+}
+
+#itemTags{
+    display: flex;
+    gap: 20px;
 }
