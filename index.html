@@ -9,6 +9,7 @@
 <body>
    <header>
     <div class="logo">
+        <img src="/views/assets/kisspng-medicine-health-care-computer-icons-5b324b31bc2f83.2959389715300227057708.png" alt="medic" width="50px">
         <h1>MedicApp</h1>
     </div>
     <div class="header-container">
@@ -24,10 +25,9 @@
             <div class="filterBy">
                 <h3>Filter By</h3>
                 <div class="tags">
-                    <button class="filter-button" data-filter="nombre">Nombre</button>
-                    <button class="filter-button" data-filter="codigo">Codigo</button>
-                    <button class="filter-button" data-filter="altoRiesgo">Alto riesgo</button>
-                    <button class="filter-button" data-filter="estupefaciente">Estupefaciente</button>
+                    <button class="filter-button" onclick= "fetchAndDisplayItems()">Nombre</button>
+                    <button class="filter-button" data-filter="alto riesgo">Alto riesgo</button>
+                    <button class="filter-button" data-filter="estupefacientes">Estupefacientes</button>
                     <button class="filter-button" data-filter="termolabil">Termolabil</button>
                     <button class="filter-button" data-filter="mezclas">Mezclas</button>
                 </div>
