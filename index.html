@@ -30,65 +30,38 @@
             <div class="filterBy">
                 <h3>Filtrado</h3>
                 <div class="tags">
-                    <button class="filter-button" onclick= "fetchAndDisplayItems()">Nombre</button>
-                    <button class="filter-button" data-filter="alto riesgo">Alto riesgo</button>
-                    <button class="filter-button" data-filter="estupefacientes">Estupefacientes</button>
-                    <button class="filter-button" data-filter="termolabil">Termolabil</button>
-                    <button class="filter-button" data-filter="mezclas">Mezclas</button>
+                    <button class="filter-button nombre" onclick= "fetchAndDisplayItems()">Nombre</button>
+                    <button class="filter-button riesgo" data-filter="alto riesgo">Alto riesgo</button>
+                    <button class="filter-button estu" data-filter="estupefacientes">Estupefacientes</button>
+                    <button class="filter-button termo" data-filter="termolabil">Termolabil</button>
+                    <button class="filter-button mezcla" data-filter="mezclas">Mezclas</button>
+                    <button class="filter-button peligroso" data-filter="peligroso">Peligroso</button>
+                    <button class="filter-button tubo" data-filter="no tubo">No tubo</button>
                 </div>
             </div>
         </div>
-            <!-- <div class="addNew">
-                <h3>Add new item</h3>
-                <div class="nameInput">
-                    <label for="itemName">Nombre:</label>
-                    <input type="text" name="name" id="itemName">
-                </div>
-                <div class="codeInput">
-                    <label for="itemCode">Código:</label>
-                    <input type="text" name="code" id="itemCode">
-                </div>
-            </div>
-            <div class="characteristics">
-                <label for="altoRiesgo">Alto riesgo</label>
-                <input type="checkbox">
-                <label for="estupefaciente">Estupefaciente</label>
-                <input type="checkbox">
-                <label for="termolabil">termolabil</label>
-                <input type="checkbox">
-                <label for="mezclas">mezclas</label>
-                <input type="checkbox">
-            </div>
-                <button class="btn apply">Crear</button>
-            </form>
-        </div> -->
         <div class="leyend-container">
-            <h3>Leyenda</h3>
-            <div class="types">
-                <div class="type-container">
-                    <p>🟣</p>
-                    Estupefaciente
-                </div>
-                <div class="type-container">
-                    <p >🟢</p>
-                    Termolabil
-                </div>
-                <div class="type-container">
-                    <p>🔵</p>
-                    Mezcla
-                </div>
-                <div class="type-container">
-                    <p>🟠</p>
-                    Alto riesgo
-                </div>
-                <div class="type-container">
-                    <p>🔴</p>
-                    Peligroso
-                </div>
-                <div class="type-container">
-                    <p>🟡</p>
-                    No tubo
-                </div>
+            <div>
+                <span>Estupefaciente:</span>
+                <p>Sustancia que puede causar dependencia y tiene propiedades analgésicas o narcóticas. Tienen su propio circuito. </p>
+            </div>
+            <div>
+                <span>Termolábil:</span>
+                <p>Medicamento que debe almacenarse en refrigeración para mantener su estabilidad y eficacia, ya que es sensible a cambios de temperatura.</p>
+            </div>
+            <div>
+                <span>Mezcla:</span>
+                <p>Combinación de dos o más sustancias para formar un producto farmacéutico, generalmente preparado de manera personalizada según las necesidades del paciente.</p>
+            </div>
+                <span>Alto riesgo:</span>
+                <p>Medicamento que requiere validación por un farmacéutico antes de su dispensación debido a su potencial impacto en la salud y seguridad del paciente.</p>
+            <div>
+                <span>Peligroso:</span>
+                <p>Medicamento con riesgos significativos para la salud, como citotóxicos que pueden causar daño a las células, incluso en la piel. Debe manejarse con precaución.</p>
+            </div>
+            <div>
+                <span>No tubo:</span>
+                <p>Medicamento que no debe ser dispensado a través de sistemas de tubo neumático debido a su naturaleza y riesgos asociados.</p>
             </div>
         </div>
     </div>

@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: poppins, sans-serif;
+    font-size: 15px;
 }
 
 body{
@@ -36,7 +37,7 @@ header{
 .main{
     background-color: #ffffff;
     padding: 40px;
-    height: 570px;
+    height: 935px;
     font-size: 20px;
     overflow-y: scroll;
     box-shadow: 2px 3px 10px rgb(102, 102, 102);
@@ -141,6 +142,7 @@ footer{
     padding: 20px;
     color: #004BAD;
     font-weight: 500;
+    font-size: 15px;
 }
 
 .characteristics{
@@ -155,8 +157,6 @@ footer{
 }
 
 .tags button{
-    background-color: #EAF6FC;
-    color: #282828;
     box-shadow: 2px 2px 3px rgb(176, 176, 176);
     border: none;
     border-radius: 5px;
@@ -165,9 +165,13 @@ footer{
     font-size: 15px;
 }
 
+.nombre{
+    background-color: #EAF6FC;
+    color: black;
+}
+
 .filter-button.active {
-    background-color: #0097D4; 
-    color: white; 
+    border: 3px solid rgb(73, 73, 73);
 }
 
 .item button{
@@ -191,18 +195,32 @@ footer{
 
 .estu{
     background-color: #8d65c5;
+    color: #ffffff;
 }
 
 .termo{
     background-color: #0cac5c;
+    color: #ffffff;
 }
 
 .riesgo{
-    background-color: orange;
+    background-color: #ff6723;
+    color: #ffffff;
 }
 
 .mezcla{
     background-color: #0074ba;
+    color: #ffffff;
+}
+
+.tubo{
+    background-color: #fcd53f;
+    color: #ffffff;
+}
+
+.peligroso{ 
+    background-color: #ff3b34;
+    color: #ffffff;
 }
 
 .dropbtn {
@@ -226,23 +244,20 @@ footer{
     background-color: #e8e8e9;
     color: #070a4c;
     font-weight: 400;
+    font-size: 15px;
     padding: 20px;
+    line-height: 2;
 }
 
-.types{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.type-container{
+.leyend-container{
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
 }
 
-.type-container p{
-    font-size: 25px;
+span{
+    font-weight: 600;
 }
 
 
