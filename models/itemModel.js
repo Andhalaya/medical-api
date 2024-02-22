@@ -7,7 +7,7 @@ const itemSchema = new mongoose.Schema({
     "alto riesgo": Boolean,
     estupefacientes: Boolean,
     mezclas: Boolean,
-    termolabil: Boolean
+    termolabil: Boolean,
 });
 
 // Create a Mongoose model for the item collection
