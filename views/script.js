@@ -89,10 +89,10 @@ function displayItems(items) {
             <div class="info">
                 <div id="itemName">
                 ${item.nombre}
-                ${item.estupefacientes ? '<span class="itemTag">🟣</span>' : ''}
-                ${item.termolabil ? '<span class="itemTag">🟢</span>' : ''}
-                ${item['alto riesgo'] ? '<span class="itemTag">🟠</span>' : ''}
-                ${item.mezclas ? '<span class="itemTag">🔵</span>' : ''}
+                ${item.estupefacientes ? '<span class="itemTag estu">Estupefaciente</span>' : ''}
+                ${item.termolabil ? '<span class="itemTag termo">termolabil</span>' : ''}
+                ${item['alto riesgo'] ? '<span class="itemTag riesgo">alto riesgo</span>' : ''}
+                ${item.mezclas ? '<span class="itemTag mezcla">mezcla</span>' : ''}
                 </div>
                 
                 <button class="dropbtn">
