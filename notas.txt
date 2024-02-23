@@ -1,9 +1,0 @@
-cambios 
-- traducir 
-- cambiar colores
-- boton search mas grande y azul
-- añadir despegabble 
-- añadir simbolos 
-- añadir leyenda 
-- añadir etiquetas/columna: peligroso, fragil
- 
