@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Fetch and display all items when the page loads
     fetchAndDisplayItems();
 
     const searchForm = document.querySelector('.search-form');
