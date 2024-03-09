@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function fetchItems(searchTerm) {
-    fetch(`https://test-dev-zajg.2.ie-1.fl0.io/search?search=${searchTerm}`)
+    fetch(`https://test-dev-xxza.1.ie-1.fl0.io/search?search=${searchTerm}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -51,7 +51,7 @@ function fetchItems(searchTerm) {
 async function fetchItemsWithFilter(filterBy) {
     try {
         // Fetch items with filter from the server
-        const response = await fetch(`https://test-dev-zajg.2.ie-1.fl0.io/filterBy?filter=${filterBy}`);
+        const response = await fetch(`https://test-dev-xxza.1.ie-1.fl0.io/filterBy?filter=${filterBy}`);
         const items = await response.json();
         console.log(items);
         // Display filtered items in the HTML
@@ -65,7 +65,7 @@ async function fetchItemsWithFilter(filterBy) {
 async function fetchAndDisplayItems() {
     try {
         // Fetch items from the server
-        const response = await fetch('https://test-dev-zajg.2.ie-1.fl0.io/items');
+        const response = await fetch('https://test-dev-xxza.1.ie-1.fl0.io/items');
         const items = await response.json();
         console.log(items)
         // Display items in the HTML
